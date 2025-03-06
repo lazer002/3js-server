@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const Constring = 'mongodb+srv://lazerxd002:0ytHKy4UYGhp2KkB@cluster0.xgyiu.mongodb.net/Surepass?retryWrites=true&w=majority&appName=Cluster0'
+const Constring = process.env.Constring
 
 const connectDB = async () => {
     try {
