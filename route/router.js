@@ -3,7 +3,7 @@ const User = require('../schema/User');
 const route = express.Router()
 const jwt = require('jsonwebtoken');
 const Bill = require('../schema/Bill');
-const secretKey = 'your-secret-key';
+const secretKey = 'fwafwafgehrjytkfjdrysgsveawagwag';
 
 route.post('/data',(req,res)=>{
 try {
@@ -26,7 +26,7 @@ try {
 
 route.get('/bills',async(req, res) => {
   try {
-    const bills = await Bill.find(); // Fetch all bills
+    const bills = await Bill.find(); 
     res.status(200).json(bills);
   } catch (error) {
     console.error("Error fetching bills:", error);
